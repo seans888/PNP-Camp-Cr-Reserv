@@ -1,12 +1,11 @@
 <?php
-
+  
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
 
 $this->title = 'Reservation';
 ?>
-<center><h1><?= Html::encode($this->title) ?></h1></center>
 <!DOCTYPE html>
 <html>
 <head>
@@ -140,7 +139,7 @@ $this->title = 'Reservation';
     width: 85%;
 }
 .col-md-offset-5 {
-    margin-left: 15%;
+    margin-left: 7%;
 }
 .col-lg-5 {
     width: 41.66666667%;
@@ -152,8 +151,73 @@ $this->title = 'Reservation';
     border-color: #2e6da4;
     width: 312px;
 }
+.tag-line {
+    background: rgba(20, 81, 125, 1);
+    color: #000;
+    width: 1000px;
+    margin-left: -15px;
+    margin-bottom: 30px
+}
+.tag-line h2 {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 0px;
+    color: #fff;
+}
+body {
+    background: url(images/background.jpg) no-repeat center center fixed;
+        background-color: transparent;
+        background-image: url("../img/bg-employee.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: auto auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container {
+    width: 1000px;
+}
+img {
+    vertical-align: middle;
+    margin-left: -15px;
+}
+.wrap > .container {
+    padding: 65px 15px 20px;
+    background-color: floralwhite;
+}
+.row {
+    margin-right: -1px;
+    margin-left: -30px;
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    width: 100%;
+}
+</style>
+<body style='background: url(images/background6.jpg) no-repeat;'>
+<center>
+    <img src="images/pnp2.jpg" style="width: 1000px; height: 450px;">
+      <div  class="tag-line" >
+        <div class="container">
+          <div class="row  text-center" >
+            <div class="col-lg-12  col-md-12 col-sm-12">   
+              <h2 data-scroll-reveal="enter from the bottom after 0.1s" ></i>RESERVATION</h2>
+            </div>
+          </div>
+        </div>   
+      </div>
+</center>
 
-	</style>
+
 </head>
 	<body>
 		<div class="col-sm-12 col-md-8 col-md-offset-5">

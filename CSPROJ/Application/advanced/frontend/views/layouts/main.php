@@ -40,8 +40,8 @@ AppAsset::register($this);
         ['label' => 'About', 'url' => ['/site/about']],
         ['label' => 'Facilities', 'url' => ['/site/facilities']],     
         //['label' => 'Personnel', 'url' => ['/site/personnel']],                    
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-    ];
+/*        ['label' => 'Contact', 'url' => ['/site/contact']],
+*/    ];
     if (Yii::$app->user->isGuest) {
         //$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
@@ -51,7 +51,7 @@ AppAsset::register($this);
         ['label' => 'Home', 'url' => ['/site/index']],    
         ['label' => 'About', 'url' => ['/site/about']],    
         ['label' => 'Facilities', 'url' => ['/site/facilities']],
-        ['label' => 'Reservation', 'url' => ['/site/reservation']],
+        // ['label' => 'Reservation', 'url' => ['/site/reservation']],
         ['label' => 'Personnel', 'url' => ['/site/personnel']],     
         ['label' => 'Contact', 'url' => ['/site/contact']],
         ['label' => 'Profile', 'url' => ['/site/profile']],

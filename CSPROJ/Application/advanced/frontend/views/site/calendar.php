@@ -14,56 +14,31 @@ class Calendar {
     }
      
     /********************* PROPERTY ********************/  
-    private $dayLabels = array("Mon","Tue","Wed","Thu","Fri","Sat","Sun");
-     
-    private $currentYear=0;
-     
+    private $dayLabels = array("Mon","Tue","Wed","Thu","Fri","Sat","Sun");     
+    private $currentYear=0;  
     private $currentMonth=0;
-     
     private $currentDay=0;
-     
     private $currentDate=null;
-     
     private $daysInMonth=0;
-     
     private $naviHref= null;
-     
-    /********************* PUBLIC **********************/  
-        
-    /**
-    * print out the calendar
-    */
+
     public function show() {
         $year  = 0;
-         
         $month = 0;
-         
         if(null==$year&&isset($_GET['year'])){
- 
             $year = $_GET['year'];
-         
         }else if(null==$year){
- 
             $year = date("Y",time());  
-         
         }          
          
         if(null==$month&&isset($_GET['month'])){
- 
-            $month = $_GET['month'];
-         
-        }else if(null==$month){
- 
-            $month = date("m",time());
-         
-        }                  
-         
-        $this->currentYear=$year;
-         
-        $this->currentMonth=$month;
-         
-        $this->daysInMonth=$this->_daysInMonth($month,$year);  
-         
+            $month = $_GET['month'];         
+        }else if(null==$month){ 
+            $month = date("m",time());         
+        }                           
+        $this->currentYear=$year;         
+        $this->currentMonth=$month;         
+        $this->daysInMonth=$this->_daysInMonth($month,$year);         
         $content='<div id="calendar">'.
                         '<div class="box">'.
                         $this->_createNavi().
@@ -100,13 +75,9 @@ class Calendar {
     private function _showDay($cellNumber){
          
         if($this->currentDay==0){
-             
             $firstDayOfTheWeek = date('N',strtotime($this->currentYear.'-'.$this->currentMonth.'-01'));
-                     
-            if(intval($cellNumber) == intval($firstDayOfTheWeek)){
-                 
-                $this->currentDay=1;
-                 
+            if(intval($cellNumber) == intval($firstDayOfTheWeek)){                
+                $this->currentDay=1;                 
             }
         }
          

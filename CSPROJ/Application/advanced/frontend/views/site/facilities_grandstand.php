@@ -5,7 +5,6 @@
 $this->title = 'PNP Camp Crame Sports Center';
 ?>
 
-
 <!-- Styles -->
 <style>
 .btn {
@@ -29,11 +28,16 @@ $this->title = 'PNP Camp Crame Sports Center';
     border: 1px solid transparent;
     border-radius: 4px;
 }
+.wrap > .container {
+    padding: 65px 15px 20px;
+    margin-left: 0px;
+}
+.row{margin-right:-180px;margin-left:-5px}s
 </style>
 
 
     <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
+    <header id="myCarousel" class="carousel slide" style="width: 1320px" style="height: 320px">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -46,20 +50,20 @@ $this->title = 'PNP Camp Crame Sports Center';
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill">
-                <img class ="slideshow" src="<?= yii\helpers\Url::to('@web/images/grandstand.jpg') ?>" />
+                <img class ="slideshow" style="width: 1320px" src="<?= yii\helpers\Url::to('@web/images/grandstand.jpg') ?>" />
  </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
                 <div class="fill">
-                  <img class ="slideshow" src="<?= yii\helpers\Url::to('@web/images/grandstand1.jpg') ?>" />
+                  <img class ="slideshow" style="width: 1320px" src="<?= yii\helpers\Url::to('@web/images/grandstand1.jpg') ?>" />
 
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill">
-                  <img class ="slideshow" src="<?= yii\helpers\Url::to('@web/images/grandstand2.jpg') ?>" />
+                  <img class ="slideshow" style="width: 1320px"  src="<?= yii\helpers\Url::to('@web/images/grandstand2.jpg') ?>" />
 
                 </div>
             </div>
@@ -118,11 +122,10 @@ $this->title = 'PNP Camp Crame Sports Center';
                 </div>
                    </div>
                </div>
-                   <div data-scroll-reveal="enter from the bottom after 0.7s">
-               <center><a href="http://localhost/advanced/frontend/web/index.php?r=site%2Flogin" class="btn btn-info btn-set"  >RESERVE NOW</a></center>
+                   <div data-scroll-reveal="enter from the bottom after 0.7s" style="margin-left: 190px">
+               <center><a href="http://localhost/phpmyreservation/" class="btn btn-info btn-set"  >RESERVE NOW</a></center>
                </div>
              </div>
-
 
 
 

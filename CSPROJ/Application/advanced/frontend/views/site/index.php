@@ -19,7 +19,7 @@ $this->title = 'Welcome to PNP Camp Crame Sports Center';
 }
 .h4, h4 {
     font-size: 18px;
-    margin-left: 10px;
+    margin-left: 40px;
 }
 .col-lg-5 {
     width: 50%;
@@ -48,6 +48,9 @@ $this->title = 'Welcome to PNP Camp Crame Sports Center';
 .tag-line {
     background: rgba(20, 81, 125, 1);
     color: #000;
+    width: 1000px;
+    margin-left: -15px;
+    margin-bottom: 30px
 }
 .tag-line h2 {
     font-size: 20px;
@@ -55,11 +58,52 @@ $this->title = 'Welcome to PNP Camp Crame Sports Center';
     padding: 0px;
     color: #fff;
 }
+body {
+    background: url(images/background.jpg) no-repeat center center fixed;
+        background-color: transparent;
+        background-image: url("../img/bg-employee.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: auto auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container {
+    width: 1000px;
+}
+img {
+    vertical-align: middle;
+    margin-left: -15px;
+}
+.wrap > .container {
+    padding: 65px 15px 20px;
+    background-color: floralwhite;
+}
+.row {
+    margin-right: -1px;
+    margin-left: -30px;
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    width: 100%;
+}
 </style>
 
+
+<!-- Start of Index -->
+<body style='background: url(images/background6.jpg) no-repeat; background-attachment: fixed;'>
 <div class="site-index">
     <center>
-      <img src="images/pnp2.jpg" style="width: 1140px; height: 600px;">
+      <img src="images/pnp2.jpg" style="width: 1000px; height: 450px;">
       <div  class="tag-line" >
         <div class="container">
           <div class="row  text-center" >
@@ -69,12 +113,17 @@ $this->title = 'Welcome to PNP Camp Crame Sports Center';
           </div>
         </div>   
       </div>
+    </center>
+    <b>
+      <h4 data-scroll-reveal="enter from the bottom after 0.2s">LATEST TOPICS</h4>
+    </b><hr />
+    <table style="border: 0px solid white; CELLSPACING:20PX; CELLPADDING:20PX; margin-left: 80px;margin-right: 80px;">
+    <tr>
+    <center>
       <div class="col-sm-12 col-md-8 col-md-offset-5">
         <div class="col-lg-5">
           <center><br>
-          <h3 data-scroll-reveal="enter from the bottom after 0.2s">EVENT/S</h3><hr />
-          <table style="border: 0px solid white; CELLSPACING:20PX; CELLPADDING:20PX;">
-            <tr>
+
               <td style="border-spacing: 20px;">
                 <img src="images/bsktbll.jpg" width="300" height="180" data-scroll-reveal="enter from the bottom after 0.3s"><br>
                 <center>FIGHTING DRAGON   vs. SLEEPING ELEPHANT</center>
@@ -104,3 +153,5 @@ $this->title = 'Welcome to PNP Camp Crame Sports Center';
     </div>
   </center>
 </div>
+</body>
+<!-- End of Index -->

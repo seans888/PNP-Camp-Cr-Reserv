@@ -18,7 +18,11 @@ class SignupForm extends Model
     public $middlename;
     public $birthdate;
     public $contact_number;
-    public $home_address;
+    public $street_address;
+    public $city_address;
+    public $zipcode_address;
+    public $state_address;
+    public $gender;
     public $position;
 
 
@@ -47,7 +51,11 @@ class SignupForm extends Model
             ['lastname', 'required'],
             ['middlename', 'required'],
             ['birthdate', 'required'],
-            ['home_address', 'required'],
+            ['street_address', 'required'],
+            ['city_address', 'required'],
+            ['zipcode_address', 'required'],
+            ['state_address', 'required'],
+            ['gender', 'required'],
             ['contact_number', 'required'],
             ['position', 'required'],
         ];
@@ -75,7 +83,11 @@ class SignupForm extends Model
         $user->lastname = $this->lastname;
         $user->middlename = $this->middlename;
         $user->birthdate = $this->birthdate;
-        $user->home_address = $this->home_address;
+        $user->street_address = $this->street_address;
+        $user->state_address = $this->state_address;
+        $user->zipcode_address = $this->zipcode_address;
+        $user->city_address = $this->city_address;
+        $user->gender = $this->gender;
         $user->contact_number = $this->contact_number;
         $user->position = $this->position;
         

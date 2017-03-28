@@ -12,17 +12,23 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
-        'request' => [
-            'csrfParam' => '_csrf-frontend',
-        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
+            'identityCookie' => [
+                'name' => '_frontendUser', //unique for frontend
+            ]
         ],
+
         'session' => [
-            // this is the name of the session cookie used for login on the frontend
-            'name' => 'advanced-frontend',
+            'name' => 'PHPFRONTENDSESSID',
+            'savePath' => sys_get_temp_dir(),
+        ],
+
+        'request' => [
+            //!!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'cookieValidationKey' => 'qEmiTXmxWuSMFxcSHclK',
+            'csrfParam' => '_frontendCSRF',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

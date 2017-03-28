@@ -11,6 +11,16 @@ $this->title = 'Login';
 ?>
 
 <style>
+a {
+    color: rgba(20, 81, 125, 1);
+    text-decoration: none;
+}
+.btn-primary {
+    color: #fff;
+    background-color: rgba(20, 81, 125, 1);
+    border-color: #2e6da4;
+    width: 557px;
+}
 .login-box-body, .register-box-body {
     background: #fff;
     padding: 70px;
@@ -47,6 +57,12 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+.help-block {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #737373;
 }
 </style>
 
